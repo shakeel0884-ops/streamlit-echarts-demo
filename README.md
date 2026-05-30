@@ -22,6 +22,12 @@ To install a pre-release version from TestPyPI:
 uv pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ streamlit-echarts
 ```
 
+To force a reinstall of a specific `streamlit-echarts` version from TestPyPI (e.g. to overwrite an already installed version):
+
+```sh
+uv pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ --index-strategy unsafe-best-match streamlit-echarts --force-reinstall
+```
+
 ## Run
 
 ```sh
